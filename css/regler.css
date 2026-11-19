@@ -1,0 +1,45 @@
+/* Regler Post */
+
+.regler__title {
+    font-size: 40px;
+}
+
+.regler__subtitle {
+    font-size: 20px;
+}
+
+/* Regler Card */
+
+.regler-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 2px 2px 30px 2px black;
+}
+
+.regler__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #252E25;
+}
+
+.regler__card-title {
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.regler__text {
+    max-width: 230px;
+    margin: 0;
+}

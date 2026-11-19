@@ -1,0 +1,100 @@
+/* Container */
+
+.container {
+
+    padding-top: 80px;
+
+}
+
+body {
+    height: 100%;
+}
+
+/* Sign in container */
+
+.sign-in__img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.sign-in__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+
+/* Sign in */
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.username {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.password {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#password {
+    margin-bottom: 20px;
+}
+
+.husk-mig {
+    margin-top: 15px;
+}
+
+/* New Account  */
+
+p.psw {
+    padding-bottom: 40px;
+}
+
+.new,
+.psw {
+    font-weight: 600;
+    padding: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: #c3aa7f;
+}
+
+input {
+    height: 50px;
+    border-radius: 2em;
+    background-color: #503D2D;
+    color: #F1E8D8;
+    padding-left: 1em;
+}
+
+.submit__button {
+    border-radius: 2em;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: black;
+    color: #F1E8D8;
+    padding: 1em;
+}
+
+/* troll part */
+
+.newer {
+    background-color: #3C4538;
+    box-shadow: 5px 5px 30px 5px black;
+    border-radius: 2em;
+    margin-top: 3em;
+    padding: 2em;
+}

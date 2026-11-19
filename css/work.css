@@ -1,0 +1,16 @@
+.work {
+    display: flex;
+    justify-content: center;
+    margin: 5em;
+    margin-bottom: 100%;
+    border-radius: 2em;
+    padding: 1em;
+    background-color: #252E25;
+    box-shadow: 5px 5px 30px 5px black;
+}
+
+.work__title {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}

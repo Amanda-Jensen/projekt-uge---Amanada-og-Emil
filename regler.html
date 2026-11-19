@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglerne</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/regler.css">
+
+
+    <meta name="theme-color" content="#6fa79f" />
+
+    <!-- nix pille -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="icons/favicon-16x16.webp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.180x180.webp">
+
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js');
+            });
+        }
+    </script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header class="header" id="up">
+        <nav class="header__menu">
+
+            <img src="icons/apple-touch-icon.180x180.webp" alt="Green" class="header__img">
+
+            <p class="header__text">Pulsen 8, 4000</p>
+
+        </nav>
+    </header>
+
+
+    <main class="main">
+
+        <section class="regler-post">
+
+            <h1 class="regler__title">Regler</h1>
+
+            <p class="regler__subtitle">Få enkle regler, så vi passer på hinanden og på træningsområdet</p>
+
+            <div class="regler-card">
+                <span class="regler__number">1</span>
+                <div class="regler__content">
+                    <h2 class="regler__card-title">Rene sko</h2>
+                    <p class="regler__text">Brug indendørs sko i træningsområdet.</p>
+                </div>
+            </div>
+
+            <div class="regler-card">
+                <span class="regler__number">2</span>
+                <div class="regler__content">
+                    <h2 class="regler__card-title">Tør af</h2>
+                    <p class="regler__text">Tør udstyret af efter brug.</p>
+                </div>
+            </div>
+
+            <div class="regler-card">
+                <span class="regler__number">3</span>
+                <div class="regler__content">
+                    <h2 class="regler__card-title">Sæt tingene tilbage</h2>
+                    <p class="regler__text">Stil håndvægte, skiver og stænger tilbage på deres plads efter brug.</p>
+                </div>
+            </div>
+
+            <div class="regler-card">
+                <span class="regler__number">4</span>
+                <div class="regler__content">
+                    <h2 class="regler__card-title">Del udstyret</h2>
+                    <p class="regler__text">Hold ikke maskiner optaget mellem sæt. Skift gerne ind, hvis andre venter.
+                    </p>
+                </div>
+            </div>
+
+            <div class="regler-card">
+                <span class="regler__number">5</span>
+                <div class="regler__content">
+                    <h2 class="regler__card-title">Respekt</h2>
+                    <p class="regler__text">Vi accepterer ikke chikane, upassende kommentarer eller at blive filmet uden
+                        samtykke.</p>
+                </div>
+            </div>
+
+            <div class="regler-card">
+                <span class="regler__number">6</span>
+                <div class="regler__content">
+                    <h2 class="regler__card-title">Fotos og video</h2>
+                    <p class="regler__text">Film kun dig selv og ingen andre.</p>
+                </div>
+            </div>
+
+            <div class="regler-card">
+                <span class="regler__number">7</span>
+                <div class="regler__content">
+                    <h2 class="regler__card-title">Affaldssortering</h2>
+                    <p class="regler__text">Smid affald i de rigtige beholdere.</p>
+                </div>
+            </div>
+
+            <div class="regler-card">
+                <span class="regler__number">8</span>
+                <div class="regler__content">
+                    <h2 class="regler__card-title">Sygdom</h2>
+                    <p class="regler__text">Træn ikke, hvis du er syg eller smittet.</p>
+                </div>
+            </div>
+
+            <div class="regler-card">
+                <span class="regler__number">9</span>
+                <div class="regler__content">
+                    <h2 class="regler__card-title">Sikkerhed</h2>
+                    <p class="regler__text">Brug udstyret rigtigt. Spørg google hvis du er i tvivl.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <div class="footer__div">
+
+            <a href="index.html" class="footer__link">
+                <img src="icons/hjem.png" alt="Hjem" class="icon__footer">
+                <span>Hjem</span>
+            </a>
+
+            <a href="mineside.html" class="footer__link">
+                <img src="icons/min-side.png" alt="Min side" class="icon__footer">
+                <span>Min side</span>
+            </a>
+
+            <a href="regler.html" class="footer__link footer__link--chose">
+                <img src="icons/regler.png" alt="Regler" class="icon__footer">
+                <span>Regler</span>
+            </a>
+
+            <a href="kontakt.html" class="footer__link">
+                <img src="icons/kontakt.png" alt="Kontakt" class="icon__footer">
+                <span>Kontakt</span>
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

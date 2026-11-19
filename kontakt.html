@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+
+    <meta name="theme-color" content="#6fa79f" />
+
+    <!-- nix pille -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="icons/favicon-16x16.webp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.180x180.webp">
+
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js');
+            });
+        }
+    </script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="js/validate.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header class="header" id="up">
+        <nav class="header__menu">
+
+            <img src="icons/apple-touch-icon.180x180.webp" alt="Green" class="header__img">
+
+            <p class="header__text">Pulsen 8, 4000</p>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="faq">
+            <div class="faq__list">
+                <h1 class="faq__title">Ofte stillede sprøgsmål</h1>
+
+
+                <details class="faq__item">
+                    <summary class="faq__question">Hvor længe gælder biletterne?</summary>
+                    <p class="faq__answer">Billetterne gælder i alle green-fit centrerer.
+                        Fra dagnes dato og et 1 år frem.
+                    </p>
+                </details>
+
+                <details class="faq__item">
+
+                    <summary class="faq__question">Er billetterne personlige?</summary>
+                    <p class="faq__answer">Ja, billetterne er personlige. Du kan derfor ikke give dem videre til
+                        familie
+                        og venner.</p>
+
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__question">Kan billetterne bruges i alle green-fit centrerer?</summary>
+                    <p class="faq__answer">Billetterne gælder i alle green-fit centrerer, Nogle tilbud kan dog kun
+                        bruges i bestemte butikker.</p>
+                </details>
+
+                <details class="faq__item">
+                    <summary class="faq__question">Refunderes ubrugte billetter?</summary>
+                    <p class="faq__answer">Billetter refunderes desværre ikke. Vi anbefaler derfor, at du vælger
+                        den billettype, der passer bedst til dine behov.</p>
+                </details>
+            </div>
+        </section>
+
+
+
+
+        <section class="kontakt">
+            <h2 class="kontakt__title">Her kan du kontake os
+            </h2>
+            <div class="contact__form">
+                <form action="kontakt_works.html" method="post" id="form" class="form" novalidate>
+
+                    <div class="group">
+
+                        <fieldset class="field kontakt__formular">
+                            <label class="formular__text" for="full_name">NAVN:</label>
+                            <input class="type__text kontakt__input" type="text" name="full_name" id="full_name">
+                            <label class="formular__text" id="mobile_number">MOBIL NUMMER:</label>
+                            <input class="type__text kontakt__input" type="tel" name="mobil" id="mobil">
+                            <label class="formular__text" for="email">EMAIL:</label>
+                            <input class="type__text kontakt__input" type="email" name="email" id="email">
+                            <label class="formular__text" for="msg">FORTÆL KORT:</label>
+                            <textarea class="type__text kontakt__input type__text--msg" name="msg" id="msg"></textarea>
+                            <fieldset class="btn-field">
+                                <div class="error-div" id="error-div"></div>
+                                <button class="btn kontakt__button">Send</button>
+                            </fieldset>
+                        </fieldset>
+
+
+
+                    </div>
+
+
+
+                </form>
+
+            </div>
+
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <div class="footer__div">
+
+            <a href="index.html" class="footer__link">
+                <img src="icons/hjem.png" alt="Hjem" class="icon__footer">
+                <span>Hjem</span>
+            </a>
+
+            <a href="mineside.html" class="footer__link">
+                <img src="icons/min-side.png" alt="Min side" class="icon__footer">
+                <span>Min side</span>
+            </a>
+
+            <a href="regler.html" class="footer__link">
+                <img src="icons/regler.png" alt="Regler" class="icon__footer">
+                <span>Regler</span>
+            </a>
+
+            <a href="kontakt.html" class="footer__link footer__link--chose">
+                <img src="icons/kontakt.png" alt="Kontakt" class="icon__footer">
+                <span>Kontakt</span>
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

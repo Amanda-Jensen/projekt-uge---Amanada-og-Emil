@@ -1,0 +1,113 @@
+/* Profil */
+
+.profil {
+    margin-top: 80px;
+    padding: 42px;
+    border-radius: 25px;
+    background-color: black;
+}
+
+.profil__avatar {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.profil__navn {
+    display: flex;
+    justify-content: center;
+}
+
+.profil__email {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* Billetter */
+.billetter {
+    padding: 2em;
+    margin: 2em 0;
+}
+
+.billet {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+.billetter__title {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 2em;
+    padding: 0.3em;
+    background-color: black;
+}
+
+/* Besøg */
+
+.besog {
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 30px 5px black;
+}
+
+.besog__title {
+    padding-left: 6px;
+    padding-top: 20px;
+}
+
+.besog__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.besog__th,
+.besog__td {
+    padding: 12px 6px;
+    text-align: left;
+    border-bottom: 0.5px solid gray;
+}
+
+/* Indstillinger */
+
+.indstillinger {
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-bottom: 2em;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 30px 5px black;
+}
+
+.indstillinger__title {
+    font-weight: 700;
+}
+
+.indstillinger__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.indstillinger__item {
+    border-bottom: 0.5px solid gray;
+}
+
+.indstillinger__link {
+    display: block;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #F1E8D8;
+}

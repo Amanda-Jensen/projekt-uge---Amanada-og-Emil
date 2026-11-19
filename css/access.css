@@ -1,0 +1,21 @@
+.access {
+    background-color: #3C4538;
+    border-radius: 2em;
+    padding: 2em;
+    margin: 50% 0 65% 0;
+    box-shadow: 5px 5px 30px 5px black;
+}
+
+.acc__text {
+    font-size: 20px;
+}
+
+.acc__text--dif {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.klik {
+    color: #c3aa7f;
+    font-weight: bold;
+}

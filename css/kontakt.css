@@ -1,0 +1,135 @@
+/* Kontakt */
+
+.kontakt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 850px;
+    align-items: center;
+    padding-bottom: 4em;
+    border-radius: 2em;
+    margin-bottom: 2em;
+    background-color: #3E3025;
+    box-shadow: 2px 2px 30px 2px black;
+}
+
+/* Kontakt Formular */
+
+.kontakt__title {
+    text-align: center;
+    font-size: 40px;
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: #3E3025;
+}
+
+.kontakt__formular {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 50px;
+    background-color: #2E3B2B;
+    box-shadow: 2px 2px 30px 2px black;
+    border-radius: 2em;
+    width: 330px;
+}
+
+.formular__text {
+    font-size: 12px;
+    color: #fff7ef;
+}
+
+.kontakt__input--textarea {
+    height: 120px;
+    padding-top: 12px;
+}
+
+.kontakt__input {
+    height: 50px;
+    margin-bottom: 24px;
+    border: 0;
+    border-bottom: 1px solid #070707;
+    background: beige;
+    border-radius: 0.5em;
+    padding: 0;
+    font-size: 16px;
+    color: brown;
+    resize: none;
+}
+
+.kontakt__input:focus {
+    outline: none;
+}
+
+.kontakt__button {
+    background: #2B2622;
+    color: #FAF8F3;
+    padding: 16px;
+    font-size: 14px;
+    align-self: flex-start;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.error-div {
+    padding-bottom: 2em;
+    font-weight: bold;
+}
+
+
+
+/* FAQ */
+
+.faq {
+    margin-bottom: 8em;
+
+}
+
+.faq__list {
+    width: 640px;
+    max-width: 100%;
+    margin-inline: auto;
+
+}
+
+.faq__title {
+    margin-top: 96px;
+    margin-bottom: 54px;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.faq__question {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.faq__answer {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.faq__item {
+    padding: 28px;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    background-color: #2B2622;
+    box-shadow: 2px 2px 30px 2px black;
+}
+
+.faq__item>.faq__question {
+    list-style: none;
+    position: relative;
+}
+
+.faq__item>.faq__question::after {
+    content: url(/icons/pluscircle.png);
+    position: absolute;
+    right: 0;
+}
+
+.faq__item[open]>.faq__question::after {
+    content: url(/icons/minuscircle.png);
+}

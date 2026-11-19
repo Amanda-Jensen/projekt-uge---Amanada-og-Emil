@@ -1,0 +1,34 @@
+.logud {
+    margin-top: 80px;
+    padding: 42px 20px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 30em;
+    background-color: black;
+
+    border: 1px solid black;
+    box-shadow: 5px 5px 30px 5px black;
+}
+
+.logud__title {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 0 12px;
+}
+
+.logud__text {
+    font-size: 16px;
+    margin: 0 0 30px;
+}
+
+.logud__knap {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 25px;
+    background-color: #252E25;
+    ;
+    color: #F1E8D8;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}

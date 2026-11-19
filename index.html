@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenfit</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/slider.css">
+
+    <script src="js/slider.js" defer></script>
+
+    <meta name="theme-color" content="#6fa79f" />
+
+    <!-- nix pille -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="icons/favicon-16x16.webp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.180x180.webp">
+
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js');
+            });
+        }
+    </script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header class="header" id="up">
+        <nav class="header__menu">
+
+            <img src="icons/apple-touch-icon.180x180.webp" alt="Green" class="header__img">
+
+            <p class="header__text">Pulsen 8, 4000</p>
+
+        </nav>
+    </header>
+
+
+
+    <main>
+        <!-- slider galleri -->
+
+        <section class="slider">
+
+            <!-- billederne -->
+
+            <div class="slider__slide">
+                <img src="icons/3d-left.png" alt="3D Left" class="slider__image">
+            </div>
+
+            <div class="slider__slide">
+                <img src="icons/genbrug.jpg" alt="Genbrug" class="slider__image">
+            </div>
+
+            <div class="slider__slide">
+                <img src="icons/3d-right.png" alt="3D Right" class="slider__image">
+            </div>
+
+            <div class="slider__slide">
+                <img src="icons/fitness.jpg" alt="Fitness" class="slider__image">
+            </div>
+
+            <div class="slider__slide">
+                <img src="icons/3d-high.png" alt="3D High" class="slider__image">
+            </div>
+
+            <!-- knapper til forrige og næste -->
+
+            <button class="slider__prev">&lt;</button>
+            <button class="slider__next">&gt;</button>
+
+            <!-- indikator cirkler tilføjes dynamisk -->
+
+            <div class="slider__dots"></div>
+
+        </section>
+
+        <article class="home__art">
+            <h1 class="home__h1">Velkommen til Greenfit</h1>
+            <h2 class="home__h2">Vi har et sjovt, skørt og nyt koncept</h2>
+            <p class="home__text">Hos os producerer du strøm, mens du træner. Så jo mere du sveder, desto grønnere
+                bliver planeten!</p>
+        </article>
+
+        <!-- model -->
+        <model-viewer camera-controls touch-action="pan-y" disable-pan environment-image="media/360-image.hdr"
+            skybox-image="media/360-image.hdr" skybox-height="50m" orientation="0deg 0deg 0deg" shadow-intensity="2"
+            max-camera-orbit="auto 90deg auto" alt="Container Living" src="media/LegoRacerbil.glb" style="width:100%; height:250px; border-radius: 2em;    border: 1px solid black;
+    box-shadow: 5px 5px 30px 5px black;" scale="2 2 2">
+        </model-viewer>
+
+
+
+        <!-- under siden -->
+
+        <section class="standfor">
+            <h2 class="stand__title">Det står vi for</h2>
+
+            <div class="stand__box">
+                <div class="color1"></div>
+                <h3 class="stand__h3">Genbrug</h3>
+                <p class="stand__text">Giv udstyr og tøj et nyt liv i stedet for at købe nyt.</p>
+            </div>
+            <div class="stand__box">
+                <div class="color1 color1--2"></div>
+                <h3 class="stand__h3">Bæredygtighed</h3>
+                <p class="stand__text">Små valg i hverdagen, der gør en stor forskel.</p>
+            </div>
+            <div class="stand__box">
+                <div class="color1 color1--3"></div>
+                <h3 class="stand__h3">Fitness</h3>
+                <p class="stand__text">Bevægelse udenfor og sammen med andre.</p>
+            </div>
+        </section>
+
+        <!-- vendespil -->
+
+        <button class="vendespil"><a href="vendespil.html" class="spil">Keder du dig? Klik på mig!</a></button>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <div class="footer__div">
+
+            <a href="index.html" class="footer__link footer__link--chose">
+                <img src="icons/hjem.png" alt="Hjem" class="icon__footer">
+                <span>Hjem</span>
+            </a>
+
+            <a href="mineside.html" class="footer__link">
+                <img src="icons/min-side.png" alt="Min side" class="icon__footer">
+                <span>Min side</span>
+            </a>
+
+            <a href="regler.html" class="footer__link">
+                <img src="icons/regler.png" alt="Regler" class="icon__footer">
+                <span>Regler</span>
+            </a>
+
+            <a href="kontakt.html" class="footer__link">
+                <img src="icons/kontakt.png" alt="Kontakt" class="icon__footer">
+                <span>Kontakt</span>
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

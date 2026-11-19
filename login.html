@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min side</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minside.css">
+
+    <meta name="theme-color" content="#6fa79f" />
+
+    <!-- nix pille -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="icons/favicon-16x16.webp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.180x180.webp">
+
+    <script>
+        // Check that service workers are registered
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js');
+            });
+        }
+    </script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header class="header" id="up">
+        <nav class="header__menu">
+
+            <img src="icons/apple-touch-icon.180x180.webp" alt="Green" class="header__img">
+
+            <p class="header__text">Pulsen 8, 4000</p>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="profil">
+            <img src="icons/pfp.webp" alt="Profil billede" class="profil__avatar">
+            <h1 class="profil__navn">Emil Mathias Hempel</h1>
+            <p class="profil__email">emilhempel2730@gmail.com</p>
+        </div>
+
+
+        <section class="billetter">
+            <h2 class="billetter__title">Mine gyldige billetter</h2>
+            <img class="billet" src="icons/billet.webp" alt="Billet">
+            <img class="billet" src="icons/billet2.webp" alt="Billet2">
+        </section>
+
+
+        <div class="besog">
+            <h2 class="besog__title">Mine besøg</h2>
+
+            <table class="besog__table">
+                <thead>
+                    <tr>
+                        <th class="besog__th">Dato</th>
+                        <th class="besog__th">Aktivitet</th>
+                        <th class="besog__th">Tid</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="besog__td">17. nov. 2026</td>
+                        <td class="besog__td">Løb</td>
+                        <td class="besog__td">07:15</td>
+                    </tr>
+                    <tr>
+                        <td class="besog__td">14. nov. 2026</td>
+                        <td class="besog__td">Romaskine</td>
+                        <td class="besog__td">17:40</td>
+                    </tr>
+                    <tr>
+                        <td class="besog__td">11. nov. 2026</td>
+                        <td class="besog__td">Cykling</td>
+                        <td class="besog__td">12:05</td>
+                    </tr>
+                    <tr>
+                        <td class="besog__td">8. nov. 2026</td>
+                        <td class="besog__td">Løb</td>
+                        <td class="besog__td">09:30</td>
+                    </tr>
+                    <tr>
+                        <td class="besog__td">4. nov. 2026</td>
+                        <td class="besog__td">Romaskine</td>
+                        <td class="besog__td">19:20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="indstillinger">
+            <h2 class="indstillinger__title">Indstillinger</h2>
+
+            <ul class="indstillinger__menu">
+
+                <li class="indstillinger__item"><a href="#" class="indstillinger__link">Rediger
+                        profil
+                    </a></li>
+                <li class="indstillinger__item"><a href="#" class="indstillinger__link">Skift
+                        adgangskode</a></li>
+                <li class="indstillinger__item">
+                    <a href="log-ud.html" id="logUd" class="indstillinger__link">Log ud</a>
+                </li>
+
+            </ul>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <div class="footer__div">
+
+            <a href="index.html" class="footer__link">
+                <img src="icons/hjem.png" alt="Hjem" class="icon__footer">
+                <span>Hjem</span>
+            </a>
+
+            <a href="mineside.html" class="footer__link footer__link--chose">
+                <img src="icons/min-side.png" alt="Min side" class="icon__footer">
+                <span>Min side</span>
+            </a>
+
+            <a href="regler.html" class="footer__link">
+                <img src="icons/regler.png" alt="Regler" class="icon__footer">
+                <span>Regler</span>
+            </a>
+
+            <a href="kontakt.html" class="footer__link">
+                <img src="icons/kontakt.png" alt="Kontakt" class="icon__footer">
+                <span>Kontakt</span>
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
